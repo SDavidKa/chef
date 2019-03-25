@@ -1,12 +1,16 @@
 import React, {Component} from 'react'
-import Search from './Search'
+import Search from './Search.js'
+import Menu from './Menu.js'
 
 class Head extends Component{
 	render(){
 		return(
-			<div>
-				<img src="https://image.freepik.com/free-vector/chef-logo-vector_20448-270.jpg" alt="logo" className="logo"/>
+			<div className="head-container">
+				<div className="head-item logo">
+					<a href="#" className="logo-chef">Chef Po</a>
+				</div>
 				<Search />
+				<Menu />
 			</div>
 		);
 	}
